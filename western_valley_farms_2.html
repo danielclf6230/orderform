@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order_form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style_2.css">
+    <script src="https://kit.fontawesome.com/e965370390.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form onsubmit="showMessage();return false">
+        <div class="container mt-4 mb-4 p-4">
+            <div class="row mb-4">
+                <div class="col">
+                    <!--Source: https: //m.facebook.com/photo.php?fbid=478013701005636&id=100063910306409&set=a.478013664338973&eav=Afb8C-bYCIdvGsFKROCXy0o6_WqnjzWJ_vkJNpsLgbCTSZu158lT4XURfjLzwqgGcJM&paipv=0&source=1-->
+                    <!-- <img src="images/logo.png"> -->
+                    <h1 class="pt-4"><strong>Western Valley Farms </strong><i class="fa-solid fa-tractor"></i></h1>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col">
+                    <label class="form-label">Current Date:</label>
+                    <input type="date" class="form-control" id="registrationDate" name="registrationDate">
+                </div>
+                <div class="col">
+                    <label class="form-label">First name</label>
+                    <input type="text" autofocus id="firstName" class="form-control" pattern="[A-Za-z -]{1,25}"
+                        placeholder="First name" required>
+                </div>
+                <div class="col">
+                    <label class="form-label">Last name</label>
+                    <input type="text" id="lastName" class="form-control" pattern="[A-Za-z -]{1,25}"
+                        placeholder="Last name" required>
+                </div>
+
+            </div>
+            <div class="row pt-3">
+                <div class="col-12">
+                    <label class="form-label">Address</label>
+                    <input type="text" id="address1" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-9 pt-3">
+                    <label class="form-label">Address 2</label>
+                    <input type="text" id="address2" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, or floor">
+                </div>
+
+                <div class="col-3 pt-3">
+                    <label class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" pattern="[A-Za-z -]{1,25}]" id="postalCode"
+                        placeholder="Postal Code" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 pt-3">
+                    <label class="form-label">Contact Phone</label>
+                    <input type="tel" class="form-control" pattern="[0-9]{1,20}" id="phoneNumber"
+                        placeholder="+1##########" required>
+                </div>
+                <div class="col-4 pt-5">
+                    <label>
+                        <input class="form-check-input m" type="radio" name="phoneType" id="Business" value="Business">
+                        Business
+                    </label>
+                    <label>
+                        <input class="form-check-input ms-2" type="radio" name="phoneType" id="Personal"
+                            value="Personal">
+                        Personal
+                    </label>
+                </div>
+                <div class="col-5 pt-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" id="email"
+                        placeholder="xxxxx@example.com" required>
+                </div>
+            </div>
+            <div class="row pt-2">
+
+                <div class="col-4 py-4">
+                    <label>Delivery Type :</label>
+                    <label>
+                        <input class="form-check-input" type="radio" name="deliveryType" id="Pickup" value="Pickup">
+                        Pickup
+                    </label>
+                    <label>
+                        <input class="form-check-input ms-2" type="radio" name="deliveryType" id="Delivery"
+                            value="Delivery">
+                        Delivery
+                    </label>
+                </div>
+            </div>
+            <div class="row mt-5 mb-3 ms-2">
+                <div class="col">
+                    <h3>Food Hampers List</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mx-3">
+                    <table class="table table-success table-striped border border-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Hamper Name</th>
+                                <th scope="col">Prices</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Vegetable Hamper</td>
+                                <td>20kg: $30.00</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Fruit Hamper</td>
+                                <td>10kg: $20.00</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Fresh Chickens</td>
+                                <td>$7.00 perChicken</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Pork</td>
+                                <td>$5/kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="row ms-2">
+                <div class="col-4">
+                    <strong>Item</strong>
+                </div>
+                <div class="col">
+                    <strong>Quantity</strong>
+                </div>
+            </div>
+            <div class="row ms-2">
+                <div class="col-4">
+                    1. Vegetable Hamper (20kg)
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" onchange="calc()" value="0" min="0" id="vegQuan">
+                </div>
+            </div>
+            <div class="row ms-2">
+                <div class="col-4">
+                    2. Fruit Hamper (10kg)
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" onchange="calc()" value="0" min="0" id="fruitQuan">
+                </div>
+            </div>
+            <div class="row ms-2">
+                <div class="col-4">
+                    3. Fresh Chickens (perChicken)
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" value="0" onchange="calc()" min="0" id="chickenQuan">
+                </div>
+            </div>
+            <div class="row ms-2">
+                <div class="col-4">
+                    4. Pork (1kg)
+                </div>
+                <div class="col-2">
+                    <input type="number" step="0.01" class="form-control" value="0" onchange="calc()" min="0"
+                        id="porkQuan">
+                </div>
+            </div>
+            <div class="row ms-2 mt-4">
+                <div class="col-3">
+                    Total ($)
+                </div>
+                <div class="col-3">
+                    <input type="number" step="0.01" class="form-control" readonly value="0" id="result">
+                </div>
+
+            </div>
+
+            <div class="row py-2 ms-1">
+                <div class="col-auto mt-5">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="col-auto mt-5">
+                    <button type="reset" class="form-control">Reset</button>
+                </div>
+            </div>
+
+            <div class="row py-2 ms-1">
+                <div class="col-auto mt-5">
+                    <div id="receipt"></div>
+                </div>
+            </div>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="calculation_2.js"></script>
+</body>
+
+</html>

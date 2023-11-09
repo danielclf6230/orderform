@@ -1,0 +1,48 @@
+body {
+    background-image: url(images/farm.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+label,
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+table {
+    width: 60% !important;
+}
+
+.receipt {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    width: 300px;
+}
+
+/* img {
+    width: 8rem;
+    float: left;
+} */
+
+h1,
+h3.rhead {
+    text-align: center;
+}
+
+.rep {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 250px;
+    padding: 20px;
+}
+
+.rbody {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: aliceblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
